@@ -48,8 +48,8 @@ const getCode = async () => {
   loading.value = true
   code.value = ['*', '*', '*', '*']
 
-  // code.value = await fetch('https://mct-marty.be/happy-home/').then((res) => res.json())
-  // loading.value = false
+  code.value = await fetch('https://mct-marty.be/happy-home/').then((res) => res.json())
+  loading.value = false
 }
 
 getCode()
